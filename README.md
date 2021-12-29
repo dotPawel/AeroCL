@@ -12,15 +12,15 @@ does pretty basic stuff<br />
   -Lists frives/usb storage<br />
   -Can clone repos (https)<br />
 <br />
-<br />
+![alt text](https://cdn.discordapp.com/attachments/701341782000140309/925711316658823178/Zrzut_ekranu_2021-12-29_122525.png)
 <br />
 ## Libraries used
- -DiscordRichPresence (https://github.com/Lachee/discord-rpc-csharp)<br />
- -LibGit2Sharp (https://github.com/libgit2/libgit2sharp/)<br />
- -MySql.Data (https://dev.mysql.com/downloads/)<br />
- -Newtonsoft.Json (https://www.newtonsoft.com/json)<br />
- -SharpDX.Direct3D9 (http://sharpdx.org/)<br />
- -System.Management (https://dotnet.microsoft.com/en-us/)<br />
+  -DiscordRichPresence (https://github.com/Lachee/discord-rpc-csharp)<br />
+  -LibGit2Sharp (https://github.com/libgit2/libgit2sharp/)<br />
+  -MySql.Data (https://dev.mysql.com/downloads/)<br />
+  -Newtonsoft.Json (https://www.newtonsoft.com/json)<br />
+  -SharpDX.Direct3D9 (http://sharpdx.org/)<br />
+  -System.Management (https://dotnet.microsoft.com/en-us/)<br />
  
  
 
