@@ -9,8 +9,9 @@ does pretty basic stuff<br />
 ## Features
   -Create / Delete Files and directories<br />
   -Lists files and directories<br />
-  -Lists frives/usb storage<br />
+  -Lists drives/usb storage<br />
   -Can clone repos (https)<br />
+  and some more basic stuff<br />
 <br />
 ![alt text](https://cdn.discordapp.com/attachments/701341782000140309/925711316658823178/Zrzut_ekranu_2021-12-29_122525.png)
 <br />
