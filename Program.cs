@@ -35,7 +35,7 @@ namespace AeroCL
                         LargeImageKey = $"image_large",
                         LargeImageText = "AeroCL",
                         SmallImageKey = $"image_small"
-                    }
+                    }  // i have no fucking idea how to make this work
                 });
             }
             catch
