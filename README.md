@@ -11,7 +11,7 @@ if it works it works<br />
 
   the clean-up status <br />
 
-  [==========                            ] <br />
+  [==========-------------------] <br />
 
   <br />
   
