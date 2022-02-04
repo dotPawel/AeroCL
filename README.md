@@ -4,7 +4,12 @@ c# command line thingy i made in my free time (.net5)
 its sure bloated as hell but a wise man once said <br />
 if it works it works<br />
 
-does pretty basic stuff<br />
+## The great clean-up
+  AeroCL will be going trough a code clean-up
+  the compiled test versions will be marked as nightly
+  after the whole clean-up a sister repo will be created named AeroCL - Basic
+  
+
 
 ## Features
   -Create / Delete Files and directories<br />
@@ -14,17 +19,3 @@ does pretty basic stuff<br />
   and some more basic stuff<br />
 <br />
 ![alt text](https://cdn.discordapp.com/attachments/701341782000140309/925711316658823178/Zrzut_ekranu_2021-12-29_122525.png)
-<br />
-## Libraries used
-  -DiscordRichPresence (https://github.com/Lachee/discord-rpc-csharp)<br />
-  -LibGit2Sharp (https://github.com/libgit2/libgit2sharp/)<br />
-  -MySql.Data (https://dev.mysql.com/downloads/)<br />
-  -Newtonsoft.Json (https://www.newtonsoft.com/json)<br />
-  -SharpDX.Direct3D9 (http://sharpdx.org/)<br />
-  -System.Management (https://dotnet.microsoft.com/en-us/)<br />
- 
- 
-
-
-
-
