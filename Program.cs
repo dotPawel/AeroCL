@@ -3,46 +3,14 @@ using SharpDX.Direct3D9;
 using System.Management;
 using System.Diagnostics;
 using System.IO;
-using System.Threading;
 using System.Collections.Generic;
-using DiscordRPC;
-// making comments is fun
 
 namespace AeroCL
 {
 
     class Program
     {
-
-        public DiscordRpcClient client;
         public static string currentDir = "";
-
-        void Initialize()
-        {
-            try // some discord rich presence stuff probably, doesnt work
-            {
-                client = new DiscordRpcClient("925429119255216139");
-
-                client.Initialize();
-
-                client.SetPresence(new DiscordRPC.RichPresence()
-                {
-                    Details = $"AeroCL",
-                    State = $"AeroCL",
-                    Timestamps = Timestamps.Now,
-                    Assets = new Assets()
-                    {
-                        LargeImageKey = $"image_large",
-                        LargeImageText = "AeroCL",
-                        SmallImageKey = $"image_small"
-                    }  // i have no fucking idea how to make this work
-                });
-            }
-            catch
-            {
-                Console.WriteLine("Failed to intialize discord rpc");
-            }
-        }
 
         static void Main(string[] args)
         {
@@ -62,7 +30,7 @@ namespace AeroCL
 
                     string currentDir;
 
-                    // some random shit for the specs tree
+                    
                     var graphicsCardName = new Direct3D().Adapters[0].Details.Description;
                     ManagementObjectSearcher mos =
                     new ManagementObjectSearcher("root\\CIMV2", "SELECT * FROM Win32_Processor");
@@ -85,18 +53,18 @@ namespace AeroCL
                     Console.WriteLine("==================================================");
                     cmdvoid();
 
-                    // the welcome screen
+                    
                 }
 
 
 
                 void cmdvoid()
                 {
-                    // the whole cmd thing, needs to be called after every command to not show the command doesnt exist thing
+                    
                     Console.Write("@" + Environment.MachineName + ">");
                     String CMD = Console.ReadLine();
 
-                    if (CMD == "HELP") // help command
+                    if (CMD == "HELP")
                     {
                         Console.WriteLine("");
                         Console.WriteLine("==================================================");
@@ -119,18 +87,16 @@ namespace AeroCL
                         Console.WriteLine(" Drive utilities == ");
                         Console.WriteLine("   LISTDRIVE - list of logical drives");
                         Console.WriteLine("   LISTUSB - list of removeable usb devices");
-                        Console.WriteLine(" Networking == ");
-                        Console.WriteLine("   GITCLONE - clones a github repository (https)");
                         Console.WriteLine("==================================================");
                         cmdvoid();
                     }
 
-                    if (CMD == "EXIT") // exits aerocl 
+                    if (CMD == "EXIT")
                     {
                         Environment.Exit(0);
                     }
 
-                    if (CMD == "ECHO") // echoes text
+                    if (CMD == "ECHO")
                     {
                         string echoText = Console.ReadLine();
                         Console.WriteLine();
@@ -139,7 +105,7 @@ namespace AeroCL
 
                     }
 
-                    if (CMD == "BEEP") // beep beep boop boop
+                    if (CMD == "BEEP")
                     {
 
                         Console.Beep();
@@ -147,98 +113,22 @@ namespace AeroCL
                         cmdvoid();
                     }
 
-                    if (CMD == "SHTDWN") // force shutdowns your pc
+                    if (CMD == "SHTDWN")
                     {
                         Process.Start("shutdown", "/s /t 0");
                     }
 
-                    if (CMD == "REBOOT") // force reboots your pc
+                    if (CMD == "REBOOT")
                     {
                         Process.Start("shutdown", "/r /t 0");
                     }
 
-                    if (CMD == "FETCHINFO") // welcome screen
+                    if (CMD == "FETCHINFO")
                     {
                         welcomeScreen();
                     }
 
-                    if (CMD == "GITCLONE") // clones a github repository to set current directory
-                    {
-                        if (currentDir == "") // if the current directory hasnt been set display this
-                        {
-                            Console.WriteLine();
-                            Console.WriteLine("Current directory hasnt been set");
-                            Console.WriteLine("set it by executing SETDIR");
-                            cmdvoid();
-                        }
-
-                        Console.WriteLine();
-                        Console.WriteLine("Enter .git url to clone");
-
-                        String gitUrl = Console.ReadLine();
-
-                        
-                        Console.WriteLine();
-                        Console.WriteLine("The repository will be cloned to the set current directory");
-                        Console.WriteLine("are you sure? - [y/n]");
-                        Console.WriteLine("");
-                        String warnDir = Console.ReadLine();
-
-                        if (warnDir == "y")
-                        {
-                            Console.WriteLine();
-                            Console.WriteLine("   ========================================================");
-                            Console.WriteLine();
-                            Console.WriteLine("    GITCLONE Started");
-                            Console.WriteLine();
-                            Console.WriteLine("    " + gitUrl + " ..");
-                            Console.WriteLine("    if the url is invalid will might fail");
-                            Console.WriteLine();
-                            Console.Write("    [");
-                            Console.Write("=");
-                            Thread.Sleep(500);
-                            Console.Write("===");
-
-                            try
-                            {
-                                Console.Write("=======");
-
-                                LibGit2Sharp.Repository.Clone(gitUrl, currentDir);
-
-                                Console.Write("=========================]"); // i didnt know how to make an actual progress bar
-                                Console.WriteLine();
-                                Console.WriteLine();
-                                Console.WriteLine("    Cloning succeded");
-                                Console.WriteLine();
-                                Console.WriteLine("    Cloned at ; " + currentDir);
-                                Console.WriteLine("");
-                                Console.WriteLine("   ========================================================");
-                                Console.WriteLine();
-                                cmdvoid();
-                            }
-                            catch
-                            {
-                                Console.WriteLine("   ========================================================");
-                                Console.WriteLine("GITCLONE failed");
-                                Console.WriteLine("the url is invalid or pc is offline");
-                                Console.WriteLine();
-                                cmdvoid();
-                            }
-                        }
-                        if (warnDir == "n")
-                        {
-                            Console.WriteLine("");
-                            cmdvoid();
-                        }
-                        else
-                        {
-                            Console.WriteLine("");
-                            cmdvoid();
-                        }
-
-                    }
-
-                    if (CMD == "LISTDRIVE") // lists all logical drives
+                    if (CMD == "LISTDRIVE")
                     {
                         try
                         {
@@ -262,7 +152,7 @@ namespace AeroCL
                         }
                     }
 
-                    if (CMD == "LISTUSB") // lists usb devices
+                    if (CMD == "LISTUSB")
                     {
                         Console.WriteLine("=============================================================");
                         Console.WriteLine("Removeable drives");
@@ -284,7 +174,7 @@ namespace AeroCL
                         cmdvoid();
                     }
 
-                    if (CMD == "SETDIR") // sets current directory
+                    if (CMD == "SETDIR")
                     {
                         Console.WriteLine();
                         Console.Write("Set current directory to? > ");
@@ -325,7 +215,7 @@ namespace AeroCL
                         }
                     }
 
-                    if (CMD == "CRDIR") // create a directory
+                    if (CMD == "CRDIR")
                     {
                         if (currentDir == "")
                         {
@@ -360,7 +250,7 @@ namespace AeroCL
 
                     }
 
-                    if (CMD == "CRFILE") // create a file
+                    if (CMD == "CRFILE")
                     {
                         if (currentDir == "")
                         {
@@ -394,7 +284,7 @@ namespace AeroCL
 
                     }
 
-                    if (CMD == "DLFILE") // delete a file
+                    if (CMD == "DLFILE")
                     {
                         if (currentDir == "")
                         {
@@ -427,7 +317,7 @@ namespace AeroCL
                         }
                     }
 
-                    if (CMD == "DLDIR") // delete a directory
+                    if (CMD == "DLDIR")
                     {
                         if (currentDir == "")
                         {
@@ -460,7 +350,7 @@ namespace AeroCL
                         }
                     }
 
-                    if (CMD == "LISTDIR") // list whatever is in the set current dir
+                    if (CMD == "LISTDIR")
                     {
                         if (currentDir == "")
                         {
@@ -478,7 +368,6 @@ namespace AeroCL
                         Console.WriteLine("=============================================================");
 
 
-                        // stole this shit from stackoverflow because didnt know how to implement it myself
                         string[] files = Directory.GetFiles(rootdir);
                         Console.WriteLine(String.Join(Environment.NewLine, files));
 
@@ -497,7 +386,7 @@ namespace AeroCL
                     }
                 }
             }
-            catch // if stuff goes very wrong this happens
+            catch
             {
                 Console.ForegroundColor = ConsoleColor.DarkRed;
 
@@ -514,7 +403,7 @@ namespace AeroCL
             }
         }
 
-        private static IList<ManagementBaseObject> GetUsbDevices() // i dont even know what the hell is this
+        private static IList<ManagementBaseObject> GetUsbDevices()
         {
             throw new NotImplementedException();
         }

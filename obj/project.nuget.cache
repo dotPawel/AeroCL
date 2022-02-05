@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wVBPVn2iBaXvytLLKkuYHKUheN6uSftZOeVSaBak5Hs+Z9cvChXhx768pds2QvkE/8z05nk2RVmgH3BHxCNzHg==",
+  "dgSpecHash": "DcNk+ToxTjWY5QPtHLdZWx1VSGh7WqFApoRD8pYfCVIa3Ce1fNOqmtIyRx1zoA/akz1DQcvbr3+hCYT0iUZhbw==",
   "success": true,
-  "projectFilePath": "D:\\Repos\\AeroCL\\AeroCL.csproj",
+  "projectFilePath": "D:\\VS Projects\\AeroCL\\AeroCL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nowy\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\nowy\\.nuget\\packages\\discordrichpresence\\1.0.175\\discordrichpresence.1.0.175.nupkg.sha512",
@@ -102,7 +102,11 @@
     "C:\\Users\\nowy\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\nowy\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
     "C:\\Users\\nowy\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\nowy\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\nowy\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\nowy\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512",
+    "C:\\Users\\nowy\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\nowy\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\nowy\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }
