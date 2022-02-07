@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "bafbd521-db6f-4bd9-bad2-105ba37a553c": {
+      "ProjectGuid": "bafbd521-db6f-4bd9-bad2-105ba37a553c",
+      "DisplayName": "AeroCL",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
