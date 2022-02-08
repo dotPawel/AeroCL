@@ -1,8 +1,9 @@
 # AeroCL
 c# command line thing i made in my free time (.net5)
 <br />
-its sure bloated as hell but a wise man once said <br />
-if it works it works<br />
+not really ment for daily usage but can be usefull at times <br />
+im making it for experience and sometimes out of boredom <br />
+<br />
 
 ## Forking AeroCL
 <br />
