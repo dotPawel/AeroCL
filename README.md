@@ -11,9 +11,9 @@ if it works it works<br />
 
   the clean-up status <br />
                                 
-  [=========================----] <br />
+  [=============================] <br />
 
-  Latest Compile : Day 1<br />
+  Latest Compile : Day 2<br />
 
 
   <br />

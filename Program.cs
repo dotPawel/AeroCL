@@ -62,7 +62,7 @@ namespace AeroCL
                 {
                     
                     Console.Write("@" + Environment.MachineName + ">");
-                    String CMD = Console.ReadLine();
+                    String CMD = Console.ReadLine().ToUpper();
 
                     if (CMD == "HELP")
                     {
