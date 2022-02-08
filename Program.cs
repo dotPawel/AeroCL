@@ -39,7 +39,7 @@ namespace AeroCL
 
 
                     Console.WriteLine("==================================================");
-                    Console.WriteLine(" AeroCL 1.0 | " + userName);
+                    Console.WriteLine(" AeroCL 2.0 | " + userName);
                     Console.WriteLine("==================================================");
                     Console.WriteLine(" |OS; " + Environment.OSVersion);
                     Console.WriteLine(" |PC; " + Environment.MachineName);
