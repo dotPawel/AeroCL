@@ -1,4 +1,6 @@
-discontiued readme bellow
+# AeroCL EOL
+AeroCL has been discontinued and replaced by UniversalCMD<br />
+https://github.com/PawelStuff/UniversalCMD<br />
 <br />
 # AeroCL
 c# command line thing i made in my free time (.net5)
