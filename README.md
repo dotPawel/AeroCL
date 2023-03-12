@@ -1,10 +1,10 @@
-# AeroCL EOL
+# Sunsetting AeroCL
 AeroCL has been discontinued and replaced by UniversalCMD<br />
-https://github.com/PawelStuff/UniversalCMD<br />
+(AeroCL can still be used within UniversalCMD using the AeroCL-UniCMD backbridge)<br />
+https://github.com/dotPawel/UniversalCMD<br />
 <br />
 # AeroCL
-c# command line thing i made in my free time (.net5)
+Command line tool written in C#, .NET 5<br />
 <br />
-<br />
-not really ment for daily usage but can be usefull at times <br />
-im making it for experience and sometimes out of boredom <br />
+This project was an testing ground for me while learning C#<br />
+the code quality is horrid, keeping this up for archival purposes<br />
